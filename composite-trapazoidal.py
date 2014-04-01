@@ -8,5 +8,5 @@ def comp_trap(f, a, b, n):
     return sum * h / 2
 
 
-print comp_trap(lambda x:math.sin(x), 0.0, math.pi, 120)
+print comp_trap(lambda x:math.sin(x), 0.0, math.pi / 2, 120)
 
