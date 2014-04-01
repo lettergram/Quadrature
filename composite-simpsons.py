@@ -1,12 +1,7 @@
-from __future__ import division
 import math
  
 def simpson(f, a, b, n):
-    """
-    Approximates the definite integral of f from a to b by
-    the composite Simpson's rule, using n subintervals
-    Courtiousy of wikipedia
-    """
+ 
     h = (b - a) / n
     s = f(a) + f(b)
  
@@ -17,4 +12,4 @@ def simpson(f, a, b, n):
  
     return s * h / 3
  
-print simpson(lambda x:math.sin(x), 0.0, math.pi, 120)
+print simpson(lambda x:math.sin(x), 0.0, math.pi / 2, 120)
